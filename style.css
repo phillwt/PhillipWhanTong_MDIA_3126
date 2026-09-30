@@ -1,0 +1,41 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: medium;
+    border-radius: 90px;
+    border-width: 0.5rem;
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25);
+
+    &.button-primary {
+        border-color: darkblue;
+        background-color: whitesmoke;
+        color: blue
+    }
+
+    &.button-secondary {
+        border-color: black;
+        background-color: darkblue;
+        color: whitesmoke;
+    }
+
+    &.button-big {
+        font-size: x-large;
+        border-width: 1rem;
+    }
+}
+
+.button-primary.button-disabled,
+.button-secondary.button-disabled {
+    text-decoration: line-through;
+    font-weight: bold;
+    color: lightgray;
+    background-color: grey;
+    cursor: not-allowed;
+    box-shadow: none;
+
+}
